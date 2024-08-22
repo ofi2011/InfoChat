@@ -1,11 +1,11 @@
 import streamlit as st
 from openai import OpenAI
+import tkinter as tk
 
-# Show title and description.
-st.set_page_config(
-    page_title="InfoChat",
-    page_icon="ice_icon.png",
-)
+root = tk.Tk()
+root.title("Il mio sito - Ice")
+root.mainloop()
+
 st.title("💬 InfoChat")
 st.write(
     "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
