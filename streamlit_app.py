@@ -1,8 +1,13 @@
 import streamlit as st
 from openai import OpenAI
+import tkinter as tk
+
+root = tk.Tk()
+root.title("InfoChat")
+root.mainloop()
 
 # Show title and description.
-st.title("💬 Chatbot")
+st.title("💬 InfoChat")
 st.write(
     "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
     "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
@@ -14,7 +19,7 @@ st.write(
 # via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
 openai_api_key = st.text_input("OpenAI API Key", type="password")
 if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
+    st.info("Inserire qui la propria chiave di ChatGPT Open IA per continuare.", icon="🗝️")
 else:
 
     # Create an OpenAI client.
