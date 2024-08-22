@@ -1,10 +1,5 @@
 import streamlit as st
 from openai import OpenAI
-import tkinter as tk
-
-root = tk.Tk()
-root.title("InfoChat")
-root.mainloop()
 
 # Show title and description.
 st.title("💬 InfoChat")
